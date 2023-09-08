@@ -10,7 +10,7 @@ db_url = config.get('mongodb', 'db_url')
 owner = config.get('owner', 'owner')
 owner_username = f'@{config.get("owner", "owner_username")}'
 connect = motor.motor_asyncio.AsyncIOMotorClient(db_url)
-create = connect.john_phonk
+create = connect.tracemoepy
 
 users = create.users
 messages = create.messages
