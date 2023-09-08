@@ -12,6 +12,6 @@ async def ping(client: Client, message: Message):
     message = await message.reply('Pong')
     end = perf_counter()
     ping = end - start
-    await message.edit(f'<b>Ping</b><code> {round(ping, 3)}s</code>')
+    await message.edit(f'<b>Pong!</b><code> {round(ping, 3)}s</code>')
     message.stop_propagation()
 
